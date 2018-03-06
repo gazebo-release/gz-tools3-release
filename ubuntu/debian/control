@@ -27,7 +27,7 @@ Description:  Ignition entry point for using all the suite of ignition tools
 Package: libignition-tools-dev
 Architecture: any
 Section: libdevel
-Depends: cmake, ${misc:Depends}
+Depends: cmake, ignition-tools, ${misc:Depends}
 Multi-Arch: same
 Description: CMake/Pkgconfig Support for rest of the suite of ignition tools
   Ignition tools is a component in the ignition framework, a set of libraries
