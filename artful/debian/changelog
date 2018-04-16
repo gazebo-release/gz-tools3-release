@@ -1,3 +1,9 @@
+ignition-tools (0.1.0-2~artful) artful; urgency=medium
+
+  * ignition-tools 0.1.0-2 release
+
+ -- Steve Peters <scpeters@osrfoundation.org>  Mon, 16 Apr 2018 16:13:50 -0700
+
 ignition-tools (0.1.0-1~artful) artful; urgency=medium
 
   * ignition-tools 0.1.0-1 release
