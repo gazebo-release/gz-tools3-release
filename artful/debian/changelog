@@ -1,3 +1,9 @@
+ignition-tools (0.2.0~pre1-1~artful) artful; urgency=medium
+
+  * ignition-tools 0.2.0~pre1-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Thu, 16 May 2019 19:24:32 +0200
+
 ignition-tools (0.1.0-2~artful) artful; urgency=medium
 
   * ignition-tools 0.1.0-2 release
