@@ -6,7 +6,6 @@ Priority: optional
 Build-Depends: debhelper (>= 9~),
                gem2deb,
                cmake,
-               libignition-cmake2-dev,
                pkg-config
 XS-Ruby-Versions: all
 Vcs-Browser: https://bitbucket.org/ignitionrobotics/ign-tools-release
@@ -21,7 +20,7 @@ XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
          ${misc:Depends}
 Multi-Arch: same
-Description:  Ignition entry point for using all the suite of ignition tools 
+Description:  Ignition entry point for using all the suite of ignition tools
   Ignition tools is a component in the ignition framework, a set of libraries
   designed to rapidly develop robot applications.
 
@@ -30,7 +29,6 @@ Architecture: any
 Section: libdevel
 Depends: cmake,
          ignition-tools,
-         libignition-cmake2-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: CMake/Pkgconfig Support for rest of the suite of ignition tools
