@@ -1,3 +1,9 @@
+ignition-tools (1.1.0-1~focal) focal; urgency=medium
+
+  * ignition-tools 1.1.0-1 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Tue, 30 Mar 2021 11:55:15 -0700
+
 ignition-tools (1.1.0~pre1-1~focal) focal; urgency=medium
 
   * ignition-tools 1.1.0~pre1-1 release
