@@ -1,3 +1,9 @@
+ignition-tools (1.4.0-2~focal) focal; urgency=medium
+
+  * ignition-tools 1.4.0-2 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Tue, 26 Oct 2021 19:13:44 +0200
+
 ignition-tools (1.4.0-1~focal) focal; urgency=medium
 
   * ignition-tools 1.4.0-1 release
