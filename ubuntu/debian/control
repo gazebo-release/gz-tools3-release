@@ -6,7 +6,8 @@ Priority: optional
 Build-Depends: debhelper (>= 9~),
                gem2deb,
                cmake,
-               pkg-config
+               pkg-config,
+               libbackward-cpp-dev 
 XS-Ruby-Versions: all
 Vcs-Browser: https://bitbucket.org/ignitionrobotics/ign-tools-release
 Vcs-Hg: https://bitbucket.org/ignitionrobotics/ign-tools-release
