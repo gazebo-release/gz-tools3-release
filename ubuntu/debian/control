@@ -1,16 +1,17 @@
 Source: ignition-tools
-Standards-Version: 3.9.8
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
-Build-Depends: debhelper (>= 9~),
-               gem2deb,
+Build-Depends: debhelper (>= 11),
                cmake,
-               pkg-config,
-               libbackward-cpp-dev 
+               gem2deb,
+               libbackward-cpp-dev,
+               ruby,
+               pkg-config
 XS-Ruby-Versions: all
-Vcs-Browser: https://bitbucket.org/ignitionrobotics/ign-tools-release
-Vcs-Hg: https://bitbucket.org/ignitionrobotics/ign-tools-release
+Vcs-Browser: https://github.com/ignitionrobotics/ignition-tools
+Vcs-Git: https://github.com/ignitionrobotics/ignition-tools.git
+Standards-Version: 4.5.1
 Homepage: http://ignitionrobotics.org/
 
 Package: ignition-tools
@@ -21,9 +22,12 @@ XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
          ${misc:Depends}
 Multi-Arch: same
-Description:  Ignition entry point for using all the suite of ignition tools
-  Ignition tools is a component in the ignition framework, a set of libraries
-  designed to rapidly develop robot applications.
+Description: Entry point for using all the suite of ignition tools - app
+ Ignition tools provide the ign command line tool that accepts multiple
+ subcommands. Each subcommand is implemented in a plugin that belongs to a
+ specific Ignition project.
+ .
+ Package contains the ign app
 
 Package: libignition-tools-dev
 Architecture: any
@@ -32,6 +36,9 @@ Depends: cmake,
          ignition-tools,
          ${misc:Depends}
 Multi-Arch: same
-Description: CMake/Pkgconfig Support for rest of the suite of ignition tools
-  Ignition tools is a component in the ignition framework, a set of libraries
-  designed to rapidly develop robot applications.
+Description: Entry point for using all the suite of ignition tools - cmake support
+ Ignition tools provide the ign command line tool that accepts multiple
+ subcommands. Each subcommand is implemented in a plugin that belongs to a
+ specific Ignition project.
+ .
+ Package contains the cmake helpers

@@ -1,0 +1,13 @@
+#!/bin/sh
+# autopkgtest check: very few things to test without other subcommands
+# (C) 2021 Jose Luis Rivero
+# Author: Jose Luis Rivero <jrivero@osrfoundation.org>
+
+set -e
+
+WORKDIR=$(mktemp -d)
+trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
+cd $WORKDIR
+# Check the presence of ign tool in PATH
+which ign 
+echo "check ign: OK"
