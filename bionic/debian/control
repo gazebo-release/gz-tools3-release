@@ -4,6 +4,7 @@ Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
 Build-Depends: debhelper (>= 9~),
+               dh-exec,
                gem2deb,
                cmake,
                pkg-config
