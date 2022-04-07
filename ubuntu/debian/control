@@ -1,4 +1,4 @@
-Source: ignition-tools
+Source: ignition-tools2
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -10,12 +10,12 @@ Build-Depends: debhelper (>= 11),
                ruby,
                pkg-config
 XS-Ruby-Versions: all
-Vcs-Browser: https://github.com/ignitionrobotics/ignition-tools
-Vcs-Git: https://github.com/ignitionrobotics/ignition-tools.git
+Vcs-Browser: https://github.com/ignitionrobotics/ignition-tools2
+Vcs-Git: https://github.com/ignitionrobotics/ignition-tools2.git
 Standards-Version: 4.5.1
 Homepage: http://ignitionrobotics.org/
 
-Package: ignition-tools
+Package: ignition-tools2
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -30,11 +30,11 @@ Description: Entry point for using all the suite of ignition tools - app
  .
  Package contains the ign app
 
-Package: libignition-tools-dev
+Package: libignition-tools2-dev
 Architecture: any
 Section: libdevel
 Depends: cmake,
-         ignition-tools,
+         ignition-tools2,
          ${misc:Depends}
 Multi-Arch: same
 Description: Entry point for using all the suite of ignition tools - cmake support
