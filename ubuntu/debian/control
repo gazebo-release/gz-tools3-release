@@ -22,6 +22,8 @@ Pre-Depends: ${misc:Pre-Depends}
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
          ${misc:Depends}
+Breaks: ignition-tools
+Replaces: ignition-tools
 Multi-Arch: same
 Description: Entry point for using all the suite of ignition tools - app
  Ignition tools provide the ign command line tool that accepts multiple
@@ -36,6 +38,8 @@ Section: libdevel
 Depends: cmake,
          ignition-tools2,
          ${misc:Depends}
+Breaks: libignition-tools-dev
+Replaces: libignition-tools-dev
 Multi-Arch: same
 Description: Entry point for using all the suite of ignition tools - cmake support
  Ignition tools provide the ign command line tool that accepts multiple
