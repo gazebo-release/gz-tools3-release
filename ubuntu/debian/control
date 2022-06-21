@@ -22,8 +22,10 @@ Pre-Depends: ${misc:Pre-Depends}
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
          ${misc:Depends}
-Breaks: ignition-tools
-Replaces: ignition-tools
+Breaks: ignition-tools,
+        gazebo11
+Replaces: ignition-tools,
+          gazebo11
 Multi-Arch: same
 Description: Entry point for using all the suite of ignition tools - app
  Ignition tools provide the ign command line tool that accepts multiple
