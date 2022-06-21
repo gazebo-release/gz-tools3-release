@@ -8,6 +8,6 @@ set -e
 WORKDIR=$(mktemp -d)
 trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
 cd $WORKDIR
-# Check the presence of ign tool in PATH
-which ign 
-echo "check ign: OK"
+# Check the presence of gz tool in PATH
+which gz 
+echo "check gz: OK"

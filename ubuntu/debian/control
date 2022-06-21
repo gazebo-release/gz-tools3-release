@@ -27,12 +27,12 @@ Breaks: ignition-tools,
 Replaces: ignition-tools,
           gazebo11
 Multi-Arch: same
-Description: Entry point for using all the suite of ignition tools - app
- Ignition tools provide the ign command line tool that accepts multiple
+Description: Entry point for using all the suite of Gazebo tools - app
+ Gazebo tools provide the gz command line tool that accepts multiple
  subcommands. Each subcommand is implemented in a plugin that belongs to a
  specific Ignition project.
  .
- Package contains the ign app
+ Package contains the gz app
 
 Package: libignition-tools2-dev
 Architecture: any
@@ -44,7 +44,7 @@ Breaks: libignition-tools-dev
 Replaces: libignition-tools-dev
 Multi-Arch: same
 Description: Entry point for using all the suite of ignition tools - cmake support
- Ignition tools provide the ign command line tool that accepts multiple
+ Ignition tools provide the gz command line tool that accepts multiple
  subcommands. Each subcommand is implemented in a plugin that belongs to a
  specific Ignition project.
  .

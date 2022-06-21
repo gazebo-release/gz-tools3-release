@@ -2,3 +2,4 @@
 usr/bin/*
 usr/lib/*/libignition-tools[0-99]-backward.so
 etc/ign.bash_completion.sh => /usr/share/bash-completion/completions/ign
+etc/gz.bash_completion.sh => /usr/share/bash-completion/completions/gz
