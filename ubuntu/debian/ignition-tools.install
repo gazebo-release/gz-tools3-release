@@ -1,4 +1,4 @@
 #!/usr/bin/dh-exec
 usr/bin/*
-usr/lib/*/libignition-tools[0-99]-backward.so
+usr/lib/*/lib*-tools[0-99]-backward.so
 etc/gz.bash_completion.sh => /usr/share/bash-completion/completions/gz
