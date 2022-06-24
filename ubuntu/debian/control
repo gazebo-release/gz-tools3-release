@@ -7,8 +7,9 @@ Build-Depends: debhelper (>= 11),
                dh-exec,
                gem2deb,
                libbackward-cpp-dev,
-               ruby,
-               pkg-config
+               libignition-cmake3-dev,
+               pkg-config,
+               ruby
 XS-Ruby-Versions: all
 Vcs-Browser: https://github.com/ignitionrobotics/ignition-tools2
 Vcs-Git: https://github.com/ignitionrobotics/ignition-tools2.git
@@ -39,6 +40,7 @@ Architecture: any
 Section: libdevel
 Depends: cmake,
          ignition-tools2,
+         libignition-cmake3-dev,
          ${misc:Depends}
 Breaks: libignition-tools-dev
 Replaces: libignition-tools-dev
