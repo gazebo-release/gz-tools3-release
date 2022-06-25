@@ -11,10 +11,10 @@ Build-Depends: debhelper (>= 11),
                pkg-config,
                ruby
 XS-Ruby-Versions: all
-Vcs-Browser: https://github.com/ignitionrobotics/ignition-tools2
-Vcs-Git: https://github.com/ignitionrobotics/ignition-tools2.git
+Vcs-Browser: https://github.com/gazebosim/gz-tools2
+Vcs-Git: https://github.com/gazebosim/gz-tools2.git
 Standards-Version: 4.5.1
-Homepage: http://ignitionrobotics.org/
+Homepage: http://gazebosim.org/
 
 Package: ignition-tools2
 Architecture: any
@@ -31,7 +31,7 @@ Multi-Arch: same
 Description: Entry point for using all the suite of Gazebo tools - app
  Gazebo tools provide the gz command line tool that accepts multiple
  subcommands. Each subcommand is implemented in a plugin that belongs to a
- specific Ignition project.
+ specific Gazebo project.
  .
  Package contains the gz app
 
@@ -45,9 +45,9 @@ Depends: cmake,
 Breaks: libignition-tools-dev
 Replaces: libignition-tools-dev
 Multi-Arch: same
-Description: Entry point for using all the suite of ignition tools - cmake support
- Ignition tools provide the gz command line tool that accepts multiple
+Description: Entry point for using all the suite of Gazebo tools - cmake support
+ Gazebo tools provide the gz command line tool that accepts multiple
  subcommands. Each subcommand is implemented in a plugin that belongs to a
- specific Ignition project.
+ specific Gazebo project.
  .
  Package contains the cmake helpers

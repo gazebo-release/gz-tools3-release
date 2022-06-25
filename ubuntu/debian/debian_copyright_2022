@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: ignition-tools
-Upstream-Contact: https://github.com/ignitionrobotics/ign-tools/issues
-Source: https://github.com/ignitionrobotics/ign-tools
+Upstream-Name: gz-tools
+Upstream-Contact: https://github.com/gazebosim/gz-tools/issues
+Source: https://github.com/gazebosim/gz-tools
 Files-Excluded: NEWS .github codecov.yml
 
 Files: *
