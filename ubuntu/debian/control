@@ -4,7 +4,6 @@ Section: science
 Priority: optional
 Build-Depends: debhelper (>= 11),
                cmake,
-               dh-exec,
                gem2deb,
                libbackward-cpp-dev,
                libgz-cmake3-dev,
