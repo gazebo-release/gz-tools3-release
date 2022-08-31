@@ -22,11 +22,9 @@ Pre-Depends: ${misc:Pre-Depends}
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
          ${misc:Depends}
-Breaks: ignition-tools,
-        gazebo11,
+Breaks: gazebo11,
         ignition-tools2 (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
-Replaces: ignition-tools,
-          gazebo11,
+Replaces: gazebo11,
           ignition-tools2 (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
 Multi-Arch: same
 Description: Entry point for using all the suite of Gazebo tools - app
@@ -43,10 +41,8 @@ Depends: cmake,
          gz-tools2,
          libgz-cmake3-dev,
          ${misc:Depends}
-Breaks: libignition-tools-dev,
-        libignition-tools2-dev (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
-Replaces: libignition-tools-dev,
-        libignition-tools2-dev (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
+Breaks: libignition-tools2-dev (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
+Replaces: libignition-tools2-dev (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
 Multi-Arch: same
 Description: Entry point for using all the suite of Gazebo tools - cmake support
  Gazebo tools provide the gz command line tool that accepts multiple
