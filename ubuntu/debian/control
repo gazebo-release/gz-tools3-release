@@ -22,10 +22,10 @@ Pre-Depends: ${misc:Pre-Depends}
 XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
          ${misc:Depends}
-Breaks: gazebo11,
-        ignition-tools2 (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
-Replaces: gazebo11,
-          ignition-tools2 (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
+Conflicts: gazebo (>= 11.0.0),
+           gazebo11
+Breaks: ignition-tools2 (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
+Replaces: ignition-tools2 (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
 Multi-Arch: same
 Description: Entry point for using all the suite of Gazebo tools - app
  Gazebo tools provide the gz command line tool that accepts multiple
