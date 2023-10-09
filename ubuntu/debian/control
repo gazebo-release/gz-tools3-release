@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 11),
                cmake,
                gem2deb,
                libbackward-cpp-dev,
-               libgz-cmake3-dev,
+               libgz-cmake4-dev,
                pkg-config,
                ruby
 XS-Ruby-Versions: all
@@ -37,7 +37,7 @@ Architecture: any
 Section: libdevel
 Depends: cmake,
          gz-tools3,
-         libgz-cmake3-dev,
+         libgz-cmake4-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: Entry point for using all the suite of Gazebo tools - cmake support
