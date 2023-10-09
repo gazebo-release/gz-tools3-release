@@ -1,4 +1,4 @@
-Source: gz-tools2
+Source: gz-tools3
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -10,12 +10,12 @@ Build-Depends: debhelper (>= 11),
                pkg-config,
                ruby
 XS-Ruby-Versions: all
-Vcs-Browser: https://github.com/gazebosim/gz-tools2
-Vcs-Git: https://github.com/gazebosim/gz-tools2.git
+Vcs-Browser: https://github.com/gazebosim/gz-tools3
+Vcs-Git: https://github.com/gazebosim/gz-tools3.git
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
-Package: gz-tools2
+Package: gz-tools3
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -24,8 +24,6 @@ Depends: ruby | ruby-interpreter,
          ${misc:Depends}
 Conflicts: gazebo (>= 11.0.0),
            gazebo11
-Breaks: ignition-tools2 (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
-Replaces: ignition-tools2 (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
 Multi-Arch: same
 Description: Entry point for using all the suite of Gazebo tools - app
  Gazebo tools provide the gz command line tool that accepts multiple
@@ -34,15 +32,13 @@ Description: Entry point for using all the suite of Gazebo tools - app
  .
  Package contains the gz app
 
-Package: libgz-tools2-dev
+Package: libgz-tools3-dev
 Architecture: any
 Section: libdevel
 Depends: cmake,
-         gz-tools2,
+         gz-tools3,
          libgz-cmake3-dev,
          ${misc:Depends}
-Breaks: libignition-tools2-dev (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
-Replaces: libignition-tools2-dev (<< 1.999.999+nightly+git20220630+1r4051562399e3f34a3b41f601839247f071f80319-1)
 Multi-Arch: same
 Description: Entry point for using all the suite of Gazebo tools - cmake support
  Gazebo tools provide the gz command line tool that accepts multiple
@@ -50,19 +46,3 @@ Description: Entry point for using all the suite of Gazebo tools - cmake support
  specific Gazebo project.
  .
  Package contains the cmake helpers
-
-Package: ignition-tools2
-Depends: gz-tools2, ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: oldlibs
-Description: transitional package
- This is a transitional package. It can safely be removed.
-
-Package: libignition-tools2-dev
-Depends: libgz-tools2-dev, ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: oldlibs
-Description: transitional package
- This is a transitional package. It can safely be removed.

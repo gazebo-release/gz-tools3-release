@@ -1,30 +1,6 @@
-gz-tools2 (2.0.0-1~jammy) jammy; urgency=medium
-
-  * gz-tools2 2.0.0-1 release
-
- -- Nate Koenig <nate@osrfoundation.org>  Thu, 22 Sep 2022 10:26:45 -0700
-
-gz-tools2 (2.0.0~pre1-3~jammy) jammy; urgency=medium
-
-  * gz-tools2 2.0.0~pre2-1 release
-
- -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 16 Sep 2022 19:13:16 +0200
-
-gz-tools2 (2.0.0~pre1-2~jammy) jammy; urgency=medium
-
-  * gz-tools2 2.0.0~pre1-2 release
-
- -- Louise Poubel <louise@openrobotics.org>  Tue, 30 Aug 2022 17:00:27 -0700
-
-gz-tools2 (2.0.0~pre1-1~jammy) jammy; urgency=medium
-
-  * gz-tools2 2.0.0~pre1-1 release
-
- -- Louise Poubel <louise@openrobotics.org>  Tue, 30 Aug 2022 10:47:17 -0700
-
-gz-tools2 (1.999.999-1~jammy) jammy; urgency=medium
+gz-tools3 (2.999.999-1~jammy) jammy; urgency=medium
 
   * Stub to be removed after first entry
 
- -- methylDragon <methyldragon@methyldragon-ThinkPad-T480>  Wed, 06 Apr 2022 17:49:42 -0700
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Mon, 09 Oct 2023 16:51:41 -0500
 
