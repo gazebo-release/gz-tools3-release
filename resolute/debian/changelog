@@ -1,5 +1,5 @@
-gz-tools3 (2.999.999-1~resolute) noble; urgency=medium
+gz-tools3 (3.0.0~pre1-1~resolute) resolute; urgency=medium
 
-  * First release for resolute
+  * gz-tools3 3.0.0~pre1-1 release
 
- -- Cristobal Arroyo <cristobal.arroyo@ekumenlabs.com>  Thu, 21 Nov 2024 11:40:03 -0500
+ -- Addisu Z. Taddese <addisuzt@intrinsic.ai>  Tue, 18 Aug 2026 17:56:37 +0000
