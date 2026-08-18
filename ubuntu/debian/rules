@@ -8,3 +8,13 @@ override_dh_auto_configure:
 	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
 %:
 	dh $@ --buildsystem=cmake
+
+# Execute doc creation to export at least the doxygen tag file
+override_dh_auto_build:
+	dh_auto_build -- doc
+	dh_auto_build
+
+override_dh_auto_install:
+	dh_auto_install
+	install -d debian/tmp/usr/share/gz/gz-tools/
+	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-tools/

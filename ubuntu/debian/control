@@ -4,14 +4,15 @@ Section: science
 Priority: optional
 Build-Depends: debhelper (>= 11),
                cmake,
+               doxygen,
                gem2deb,
                libbackward-cpp-dev,
-               libgz-cmake5-dev,
+               libgz-cmake6-dev,
                pkg-config,
                ruby
 XS-Ruby-Versions: all
-Vcs-Browser: https://github.com/gazebosim/gz-tools3
-Vcs-Git: https://github.com/gazebosim/gz-tools3.git
+Vcs-Browser: https://github.com/gazebosim/gz-tools
+Vcs-Git: https://github.com/gazebosim/gz-tools.git
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
@@ -20,9 +21,12 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ruby | ruby-interpreter,
+Depends: ruby:any,
+         ${shlibs:Depends},
          ${misc:Depends}
-Conflicts: gazebo (>= 11.0.0),
+Provides: gz-tools-generic
+Conflicts: gz-tools-generic,
+           gazebo (>= 11.0.0),
            gz-tools2,
            gazebo11
 Multi-Arch: same
@@ -38,8 +42,10 @@ Architecture: any
 Section: libdevel
 Depends: cmake,
          gz-tools3,
-         libgz-cmake5-dev,
+         libgz-cmake6-dev,
          ${misc:Depends}
+Provides: libgz-tools-dev-generic
+Conflicts: libgz-tools-dev-generic
 Multi-Arch: same
 Description: Entry point for using all the suite of Gazebo tools - cmake support
  Gazebo tools provide the gz command line tool that accepts multiple
